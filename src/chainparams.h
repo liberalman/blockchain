@@ -79,7 +79,7 @@ protected:
     int nSubsidyHalvingInterval;
     string strDataDir;
     vector<CDNSSeedData> vSeeds;
-    std::vector<unsigned char> base58Prefixes[MAX_BASE58_TYPES];
+    vector<unsigned char> base58Prefixes[MAX_BASE58_TYPES];
 };
 
 /**

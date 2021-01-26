@@ -121,7 +121,7 @@ public:
         //     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
         //     CTxOut(nValue=50.00000000, scriptPubKey=0x5F1DF16B2B704C8A578D0B)
         //   vMerkleTree: 4a5e1e
-        const char* pszTimestamp = "The Times 05/Mar/2016 Socho do it!";
+        const char* pszTimestamp = "The Times 05/Mar/2016 socho do it!";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -148,7 +148,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(0); //种子网络连接参数
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
-        base58Prefixes[SECRET_KEY] =     list_of(128);
+        base58Prefixes[SECRET_KEY]     = list_of(128);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4);
 
